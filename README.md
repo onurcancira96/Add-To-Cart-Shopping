@@ -10,7 +10,7 @@ https://onurcancira96.github.io/Add-To-Cart-Shopping/
 
 ## Ekran Görüntüsü
 
-![image](https://github.com/onurcancira96/Add-To-Cart-Shopping/assets/114770570/5f20053c-ab3e-4b59-acf4-ff641571a31e)
+![image](https://github.com/onurcancira96/Add-To-Cart-Shopping/assets/114770570/483a4cf0-2b10-46de-bb68-4251f53cea98)
 
 ## Özellikler
 
