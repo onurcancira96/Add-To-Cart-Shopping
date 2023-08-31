@@ -31,7 +31,7 @@ fetch("./Json/product.json")
       let newDiv = document.createElement("div");
       newDiv.classList.add("item", "col-md-3", "col-12", "product-" + key);
       newDiv.innerHTML = `
-            <img src="${value[1].img}">
+            <img src=".${value[1].img}">
             <div class="title">${value[0]}</div>
             <div class="price">${parseInt(value[1].price).toLocaleString(
               "tr-TR",
