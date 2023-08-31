@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alışveriş App</title>
+    <link rel="icon" type="image/x-icon" href="./img/shopping-cart.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!--BOOTSTRAP KULLANILDI-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="container col-12">
+      <header class="">
+        <h1>Alışveriş Sepetim</h1>
+        <div class="shopping">
+          <img src="./img/shopping.svg" />
+          <span class="quantity">0</span>
+        </div>
+      </header>
+
+      <div class="list d-flex col-11 container flex-wrap"></div>
+    </div>
+    <div class="card">
+      <h1>Sepetim</h1>
+      <div class="lastButtons d-flex col-12 justify-content-between">
+        <button
+          class="cartBtn discountBtn col-12 d-none"
+          onclick="addToDiscount();"
+        >
+          İndirim  Uygula
+        </button>
+        <form class="col-12" id="myForm" action="postedilen.html" method="POST">
+          <input type="hidden" name="data" id="postArrayInput" />
+          <button class="cartBtn complateBtn col-12 d-none" type="submit">
+            Alışverişi Tamamla
+          </button>
+        </form>
+      </div>
+      <ul class="listCard"></ul>
+      <div class="checkOut">
+        <div class="total">Toplam: <span>₺0,00</span></div>
+        <div class="closeShopping">Sepeti Kapat</div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

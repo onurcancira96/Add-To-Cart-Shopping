@@ -1,0 +1,259 @@
+body {
+    background-color: #E3E7E8;
+    font-family: system-ui;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+
+header .shopping {
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+}
+
+header .shopping img {
+    width: 40px;
+}
+
+header .shopping span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.list .item:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: 0.5s;
+
+}
+
+.list .item img {
+    width: 90%;
+    height: 65%;
+    object-fit: contain;
+}
+
+.list .item .title {
+    font-weight: 600;
+}
+
+.list .item .price {
+    margin: 10px;
+}
+
+.list .item button {
+    border: none;
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.list .item button:hover {
+    background-color: #fff;
+    color: #1C1F25;
+    transition: 0.5s;
+    border: none;
+}
+
+.list .item button.added-cart {
+    background-color: #ed3939;
+    color: #ffffff;
+}
+
+.card {
+
+    border: none;
+    position: fixed;
+    top: 5vh;
+    left: 100%;
+    width: 500px;
+    background-color: #131312;
+    height: 90vh;
+    transition: 0.5s;
+    background: rgba(33, 32, 32, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.card h1 {
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkOut {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: unset;
+
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: #fff;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.listCard {
+    height: calc(100% - 70px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.listCard::-webkit-scrollbar {
+    width: 15px;
+}
+
+.listCard::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.listCard::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.listCard::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    margin-bottom: 5%;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff5;
+    border: none;
+}
+
+.listCard li button:hover {
+
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.cartBtn {
+    border: none;
+    background-color: #1C1F25;
+    color: #fff;
+    width: 40%;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.cartBtn:hover {
+    background-color: #fff;
+    color: #1C1F25;
+    transition: 0.5s;
+    border: none;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+.sizeCerceve {
+    position: relative;
+    text-align: right;
+}
+
+.size {
+    background: #1C1F25;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    padding: 1px 5px;
+}
