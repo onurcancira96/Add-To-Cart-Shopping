@@ -44,3 +44,4 @@ Eğer projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları izle
 4. Bir birleştirme isteği (pull request) gönderin.
 
 ## İletişim
+Eğer herhangi bir sorunuz, öneriniz veya geri bildiriminiz varsa, lütfen bana onurcan.cira96@gmail.com adresinden ulaşın veya GitHub üzerinden bir konu açın.
